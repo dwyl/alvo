@@ -1,26 +1,30 @@
 {
-  "name": "alvo",
+  "name": "anatm",
   "version": "1.0.0",
-  "description": "What cucumber could have been if it was written for humans",
-  "main": "tbd.js",
+  "description": "Ignore this is doesn't work.",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node lib/static-server.js"
+    "test": "istanbul cover test.js",
+    "open-coverage": "open ./coverage/lcov-report/index.html",
+    "start": "live-server --port=8000"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/dwyl/alvo.git"
   },
   "keywords": [
-    "End-to-End Testing Acceptance Plain English Simplified"
+    "probably wont work"
   ],
-  "author": "@nelsonic <contact.nelsonic@gmail.com> (https://github.com/nelsonic), YOU?",
+  "author": "@nelsonic & Friends! :-)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dwyl/alvo/issues"
   },
   "homepage": "https://github.com/dwyl/alvo",
-  "dependencies": {
-    "hapi": "^8.4.0"
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "live-server": "^1.2.0",
+    "uglify-js": "^2.7.5",
+    "watchify": "^3.9.0"
   }
 }

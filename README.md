@@ -10,6 +10,14 @@ alvo
 
 ## Why?
 
+
+workflow:
++ watchify files in `/lib`
++ browserify files in `/lib`
+pre-commit:
++ uglify build.js
+
+
 ### Story
 
 We all have a ***personal story*** of teaching someone how to use the internet.
